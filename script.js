@@ -1,4 +1,4 @@
-function countCharacters(str) {
+function firstNonRepeatedChar(str) {
     const charCount = {};
     for (let char of str) {
         if (charCount[char]) {
@@ -8,7 +8,7 @@ function countCharacters(str) {
         }
     }
     for (let count of str){
-        if (charCount [count] == 1){
+        if (charCount [count] === 1){
             return count;
         }
     }
